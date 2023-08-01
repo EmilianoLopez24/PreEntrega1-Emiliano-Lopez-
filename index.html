@@ -4,9 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>JavaScript Coder</title>
   </head>
   <body>
+    <h1>Calculadora de Indice de Masa Corporal</h1>
+    <section>
+      <p>
+        El exceso de peso puede llevar a un aumento en los niveles de colesterol
+        total y presión arterial, lo que incrementa el riesgo de padecer
+        enfermedades coronarias. La obesidad también aumenta la probabilidad de
+        tener otros factores de riesgo cardiovascular, como hipertensión,
+        colesterol alto y diabetes.
+      </p>
+      <p>
+        el imc nos permite mediante un calculo matemático, comprender que tan
+        sana es la composicion corporal de un individuo. Siendo el rango de 18.5
+        y 24.9 los considerados niveles sanos.
+      </p>
+    </section>
+    <div class="input-container">
+      <label for="peso">Peso (kg):</label>
+      <input type="number" id="peso" placeholder="Altura en kilos" />
+    </div>
+    <div class="input-container">
+      <label for="altura">Altura (m):</label>
+      <input type="number" id="altura" placeholder="Altura en metros" />
+    </div>
+    <button onclick="calcularIMC()">Calcular IMC</button>
+    <p id="ResultadoIMC"></p>
     <script src="script.js"></script>
   </body>
 </html>
